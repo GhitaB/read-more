@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var add_readmore_links = function() {
     $("span.read-more").after("<a href='#' class='read-more-link'><span class='read-more-link-text'>Read more</span></a>");
   };
@@ -12,7 +12,7 @@ $(document).ready(function(){
   };
 
   var toggle_sections_visibility_on_click = function() {
-    $(".read-more-link").on("click", function(){
+    $(".read-more-link").on("click", function() {
       $(this).prev().slideToggle();
       var $span_readmore_link = $(this).find("span.read-more-link-text");
       $span_readmore_link.text(toggle_text($span_readmore_link.text()));

@@ -16,6 +16,7 @@ $(document).ready(function() {
       $(this).prev().slideToggle();
       var $span_readmore_link = $(this).find("span.read-more-link-text");
       $span_readmore_link.text(toggle_text($span_readmore_link.text()));
+      return false;
     });
   };
 
